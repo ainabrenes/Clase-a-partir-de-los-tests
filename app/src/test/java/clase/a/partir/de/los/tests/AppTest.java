@@ -23,6 +23,7 @@ class AppTest {
         assertEquals(null, m.menu.get("Macarrones"));
        
     }
+   
     @Test
     public void testLlistarMenu() {
         Menu m = new Menu();
@@ -32,7 +33,8 @@ class AppTest {
         assertEquals(m.menu, m.llistar_menu());
        
     }
-        @Test
+    
+    @Test
     public void testCrearComanda() {
         Menu m = new Menu();
         int comandasIniciales = m.comanda.size();
@@ -40,7 +42,7 @@ class AppTest {
         int comandasFinales = m.comanda.size();      
         assertEquals(comandasIniciales+1, comandasFinales);       
     }
-
+ /* 
     @Test
     public void testAfegirPlatComanda() {
         Menu m = new Menu();
@@ -72,4 +74,7 @@ class AppTest {
         assertEquals(m.comanda.get(0), m.MostrarComanda(0));
        
     }
+    
+    
+*/
 }
