@@ -12,7 +12,7 @@ public class Comanda {
    
     private int numComanda;
     private String nombrePlato;
-    private List<Plat> platosComanda=new ArrayList<>();;
+    private List<Plat> platosComanda=new ArrayList<>();
     
     public Comanda() {
         this.platosComanda = new ArrayList<>();
@@ -38,20 +38,13 @@ public class Comanda {
     public void afegirPlatComanda(Plat plat) {
         platosComanda.add(plat);
     }
-     
-    
-    
-  
-/* 
-    public void afegirPlatComanda(Plat plat) {
-        platosComanda.add(plat);
-    }
 
+ 
     public void eliminarPlato(Plat plat) {
         platosComanda.remove(plat);
     }
 
     public List<Plat> getPlatos() {
         return platosComanda;
-    }*/
+    }
 }

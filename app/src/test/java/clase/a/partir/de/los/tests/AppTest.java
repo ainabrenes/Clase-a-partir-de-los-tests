@@ -50,8 +50,8 @@ class AppTest {
         m.afegirPlatComanda(0, "Macarrones");   
         assertEquals(m.platosComanda.get(0),"Macarrones");       
     }
-    /* 
- 
+   
+
     @Test
     public void testCalcularTotal() {
         Menu m = new Menu();
@@ -61,6 +61,7 @@ class AppTest {
         assertEquals(10.50, m.CalcularTotal(0));   
 
     }
+   
     @Test
     public void testLlistarComanda() {
         
@@ -75,7 +76,7 @@ class AppTest {
         assertEquals(m.comanda.get(0), m.MostrarComanda(0));
        
     }
-    */
+    
     
     
 
