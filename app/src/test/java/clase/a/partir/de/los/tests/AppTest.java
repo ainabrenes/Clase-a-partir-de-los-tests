@@ -42,7 +42,7 @@ class AppTest {
         int comandasFinales = m.comanda.size();      
         assertEquals(comandasIniciales+1, comandasFinales);       
     }
- /* 
+
     @Test
     public void testAfegirPlatComanda() {
         Menu m = new Menu();
@@ -50,7 +50,8 @@ class AppTest {
         m.afegirPlatComanda(0, "Macarrones");   
         assertEquals(m.platosComanda.get(0),"Macarrones");       
     }
-
+    /* 
+ 
     @Test
     public void testCalcularTotal() {
         Menu m = new Menu();
@@ -74,7 +75,8 @@ class AppTest {
         assertEquals(m.comanda.get(0), m.MostrarComanda(0));
        
     }
+    */
     
     
-*/
+
 }
