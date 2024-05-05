@@ -61,7 +61,7 @@ class AppTest {
         assertEquals(10.50, m.CalcularTotal(0));   
 
     }
-   
+    
     @Test
     public void testLlistarComanda() {
         
