@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
-public class Menu2 {
+public class Menu {
     Map<String,Double> menu=new HashMap<>();
     List<Comanda> comanda = new ArrayList<>();
     List<Plat> platosComanda = new ArrayList<>();
@@ -27,14 +27,15 @@ public class Menu2 {
     public void crearComanda() {
         Comanda comandaNueva = new Comanda();
         comanda.add(comandaNueva);
+        
     }
      
     public void afegirPlatComanda(int numComanda, String nombrePlato) {
-        Comanda c = comanda.get(numComanda);
-        Plat plat = new Plat(nombrePlato, 0.0); 
-        c.afegirPlatComanda(plat); 
-        platosComanda.add(plat); 
+        Comanda comandaActual = comanda.get(numComanda);
+        Plat plat = new Plat(nombrePlato, menu.get(nombrePlato)); 
+        comandaActual.afegirPlat(plat);
     }
+    
     
     public double CalcularTotal(int numComanda) {
         Comanda c = comanda.get(numComanda);
@@ -52,4 +53,12 @@ public class Menu2 {
             return null; 
         }
     }
-}
+    
+    
+    
+    
+    
+
+    
+    
+}                                   

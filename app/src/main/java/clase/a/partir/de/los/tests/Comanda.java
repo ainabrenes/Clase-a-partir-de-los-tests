@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Comanda {
-   
+
     private int numComanda;
     private String nombrePlato;
-    private List<Plat> platosComanda=new ArrayList<>();
+    private List<Plat> platosComanda;
     
     public Comanda() {
         this.platosComanda = new ArrayList<>();
@@ -35,15 +35,11 @@ public class Comanda {
         this.nombrePlato=nombrePlato;
         this.numComanda=numComanda;
     }
-    public void afegirPlatComanda(Plat plat) {
+    public void afegirPlat(Plat plat) {
         platosComanda.add(plat);
     }
 
  
-    public void eliminarPlato(Plat plat) {
-        platosComanda.remove(plat);
-    }
-
     public List<Plat> getPlatos() {
         return platosComanda;
     }
