@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
     @Test
     public void testAfegirPlatMenu() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         m.afegir_plat("Macarrones", 10.50);
         assertEquals(10.50, m.menu.get("Macarrones"));
        
@@ -17,7 +17,7 @@ class AppTest {
 
     @Test
     public void testEliminarPlat() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         m.afegir_plat("Macarrones", 10.50);
         m.eliminar_plat("Macarrones");
         assertEquals(null, m.menu.get("Macarrones"));
@@ -26,7 +26,7 @@ class AppTest {
    
     @Test
     public void testLlistarMenu() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         m.afegir_plat("Macarrones", 10.50);
         m.afegir_plat("Pizza", 12.50);
         
@@ -36,7 +36,7 @@ class AppTest {
     
     @Test
     public void testCrearComanda() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         int comandasIniciales = m.comanda.size();
         m.crearComanda();  
         int comandasFinales = m.comanda.size();      
@@ -45,7 +45,7 @@ class AppTest {
 
     @Test
     public void testAfegirPlatComanda() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         m.crearComanda();  
         m.afegirPlatComanda(0, "Macarrones");   
         assertEquals(m.platosComanda.get(0),"Macarrones");       
@@ -54,7 +54,7 @@ class AppTest {
 
     @Test
     public void testCalcularTotal() {
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
         m.afegir_plat("Macarrones", 10.50);
         m.crearComanda();  
         m.afegirPlatComanda(0, "Macarrones");     
@@ -65,7 +65,7 @@ class AppTest {
     @Test
     public void testLlistarComanda() {
         
-        Menu m = new Menu();
+        Menu2 m = new Menu2();
 
         m.afegir_plat("Macarrones", 10.50);
         m.afegir_plat("Pizza", 12.50);
